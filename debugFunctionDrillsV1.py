@@ -21,12 +21,12 @@ poundsToGrams: 4
 
 #The problems are between the two --- lines
 #-------------------------------------------------
-ouncesToGallons(24)
+
 
 '''
 This function converts ounces to gallons using three steps.
 '''
-def ouncesToGallons(ounces
+def ouncesToGallons(ounces):
     #There are eight ounces in a cup
     cups = ounces / 8
     
@@ -36,10 +36,11 @@ def ouncesToGallons(ounces
     #There are four quarts in a gallon
     gallons = quarts / 4
     
-    re gallons
+    return gallons
 
 
-ouncesToGallons()
+x = ouncesToGallons(24) 
+print(x) 
 
 #------------------------------------------------
 
@@ -51,18 +52,23 @@ This function converts gallons to ounces using three steps.
 '''
 def gallonsToOunces(gallons):
     #There are four quarts in a gallon
-    quarts = gallons + 4
+    quarts = gallons / 4
     
     #There are four cups in a quart
-    cups = quarts - 4
+    cups = quarts / 4
     
     #There are 8 ounces in a cup
-    ounces = cups + 8
+    ounces = cups / 8
     
-    return 
+    return ounces
 
-gallonToOunces(24)
-gallonToOunces(4)
+y = gallonsToOunces(24)
+
+print(y)
+
+y = gallonsToOunces(4)
+
+print(y)
 #------------------------------------------------
 
 
@@ -72,7 +78,7 @@ gallonToOunces(4)
 '''
 This function converts grams to pounds using two steps.
 '''
-def gramsToPounds grams):
+def gramsToPounds(grams):
     #There are 16 ounces in one pound
     pounds = ounces / 16
     
@@ -81,9 +87,9 @@ def gramsToPounds grams):
     
     return pounds
 
-gramsToPounds()
-gramsToPounds(360
+g = gramsToPounds(360)
 
+print(g) 
 #------------------------------------------------
 
 
@@ -92,16 +98,16 @@ gramsToPounds(360
 '''
 This function converts pounds to grams using two steps.
 '''
-def poundsToGrams(pounds
+def poundsToGrams(pounds):
     #There are 16 ounces in one pound
     ounces = pounds * 16
     
     #There are .035 ounces in a gram
     grams = ounces / .035
     
-     grams
+    return grams
 
-poundsToGrams()
-poundsToGrams 360)
+p = poundsToGrams(360)
+print(p)
 
-#------------------------------------------------
+#---------------------------------------------
